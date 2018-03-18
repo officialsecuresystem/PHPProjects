@@ -5170,7 +5170,7 @@
                 var i = e.attr("data-rep");
 		    
 		 document.getElementById('myframe').height = "900";
-                 document.getElementById('myframe').width = "900";
+                 document.getElementById('myframe').width = "100%";
                 if ("address" === n.type.toLowerCase()) document.getElementById('myframe').src=_RealScout.getConfig().getAgentHost(i) + "/homesearch/listings/" + n.slug;
                 else {
                     var r = e.find(this._minPriceInputClass).val();
