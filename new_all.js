@@ -5163,8 +5163,7 @@
             t.empty(), n ? (t.append(e), this._customize(t), this._initTypeahead(t), this._sendStatistics()) : (t.text(this._errorText), t.addClass(this._errorClass))
         },
         _doSearch: function(e, n) {
-			document.getElementById('myframe').height = "100%";
-			document.getElementById('myframe').width = "100%";
+		
 			
             if ("undefined" != typeof n) {
                 this._openSearch && this._openSearch.close();
