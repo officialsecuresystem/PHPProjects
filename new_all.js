@@ -5169,7 +5169,7 @@
                 this._openSearch && this._openSearch.close();
                 var i = e.attr("data-rep");
 		    
-		
+		document.getElementById('myframe').height = "900";
                  document.getElementById('myframe').width = "100%";
                 if ("address" === n.type.toLowerCase()) document.getElementById('myframe').src=_RealScout.getConfig().getAgentHost(i) + "/homesearch/listings/" + n.slug;
                 else {
@@ -5185,7 +5185,7 @@
                         l = "geo_type=" + n.type + "&",
                         c = "geo_id=" + n.id;
                     document.getElementById('myframe').src = _RealScout.getConfig().getAgentHost(i) + "/homesearch/map?" + r + o + s + a + u + l + c;
-			document.getElementById('myframe').height = document.getElementById('myframe').contentWindow.document.body.scrollHeight + "px";
+			
                 }
             }
         },
