@@ -5185,6 +5185,7 @@
                         l = "geo_type=" + n.type + "&",
                         c = "geo_id=" + n.id;
                     document.getElementById('myframe').src = _RealScout.getConfig().getAgentHost(i) + "/homesearch/map?" + r + o + s + a + u + l + c;
+			document.getElementById('myframe').height = document.getElementById('myframe').contentWindow.document.body.scrollHeight + "px";
                 }
             }
         },
