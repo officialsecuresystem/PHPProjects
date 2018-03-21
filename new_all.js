@@ -5168,25 +5168,7 @@
             if ("undefined" != typeof n) {
                 this._openSearch && this._openSearch.close();
                 var i = e.attr("data-rep");
-		    
-		document.getElementById('myframe').height = "900";
-                 document.getElementById('myframe').width = "100%";
-                if ("address" === n.type.toLowerCase()) document.getElementById('myframe').src=_RealScout.getConfig().getAgentHost(i) + "/homesearch/listings/" + n.slug;
-                else {
-                    var r = e.find(this._minPriceInputClass).val();
-                    r = r ? "pmin=" + r + "&" : "";
-                    var o = e.find(this._maxPriceInputClass).val();
-                    o = o ? "pmax=" + o + "&" : "";
-                    var s = e.find(this._minBedsInputClass).val();
-                    s = parseInt(s) ? "bmin=" + parseInt(s) + "&" : "";
-                    var a = e.find(this._minBathsInputClass).val();
-                    a = parseInt(a) ? "bamin=" + parseInt(a) + "&" : "";
-                    var u = "zoom=12&",
-                        l = "geo_type=" + n.type + "&",
-                        c = "geo_id=" + n.id;
-                    document.getElementById('myframe').src = _RealScout.getConfig().getAgentHost(i) + "/homesearch/map?" + r + o + s + a + u + l + c;
-			
-                }
+		
             }
         },
         _getQueryResultTemplate: function(t) {
